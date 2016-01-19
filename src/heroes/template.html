@@ -1,0 +1,32 @@
+<ui-view>
+    <div class="heroes-page_wrapper full-height">
+        <md-content class="transparent" layout="row" layout-align="center center">
+            <div layout-margin flex layout="column" layout-align="center center">
+                <h1 class="text-white">Next heroes belong to Heroes Stuffig Agancy</h1>
+            </div>
+            <div class="button-toolbar" layout="row" layout-align="end center">
+                <md-button ui-sref="home" class="md-raised">Home</md-button>
+                <md-button ui-sref="join" class="md-raised">Join us!</md-button>
+            </div>
+        </md-content>
+        <md-content class="transparent">
+            <md-list>
+                <md-list-item layout-margin class="md-3-line smooth" ng-click="ctrl.getDetails(hero)" ng-repeat="hero in ctrl.heroes">
+                    <img ng-src="{{hero.photo}}" class="md-avatar big-avatar" alt="{{hero.pseudonym}}" />
+                    <div class="md-list-item-text" layout="column">
+                        <h3>{{ hero.pseudonym }}</h3>
+                        <p><span ng-bind="hero.firstName"></span> <span ng-bind="hero.lastName"></span></p>
+                        <p ng-bind="hero.sex"></p>
+                    </div>
+                </md-list-item>
+                <md-divider></md-divider>
+            </md-list>
+        </md-content>
+        <div layout="column" layout-align="center center">
+            <p class="text-small shadowed">And may be you are interesting in exchange rate... </p>
+            <p class="text-small shadowed">{{ctrl.currency.source}} to {{ctrl.currency.target}} is {{ctrl.currency.rate}}</p>
+            <p class="text-small shadowed">Data presented by</p>
+            <p class="text-small shadowed"><a href="http://currency-api.appspot.com">currency-api.appspot.com</a></p>
+        </div>
+        <div>
+</ui-view>

@@ -1,0 +1,44 @@
+<div class="join-page_wrapper full-height">
+    <md-content class="transparent" layout="row" layout-align="center center">
+        <div layout-margin layout-margin flex layout="column" layout-align="center center">
+            <h2>You are superhero? So join us!</h2>
+        </div>
+        <div class="button-toolbar transparent" layout="row" layout-align="end center">
+            <md-button ui-sref="home" class="md-raised">Home</md-button>
+            <md-button ui-sref="heroes" class="md-raised">Heroes</md-button>
+        </div>
+    </md-content>
+    <div layout="row" layout-align="center center">
+        <md-card class="md-whiteframe-14dp light" flex="50">
+            <md-card-content>
+                <form ng-submit="ctrl.join(hero)">
+                    <md-input-container>
+                        <label>Pseudonym</label>
+                        <input type="text" ng-model="hero.pseudonym" required>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>First Name</label>
+                        <input type="text" ng-model="hero.firstName">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Last Name</label>
+                        <input type="text" ng-model="hero.lastName">
+                    </md-input-container>
+                    <md-select ng-model="hero.sex" placeholder="Select a sex">
+                        <md-option value="Female">Female</md-option>
+                        <md-option value="Male">Male</md-option>
+                        <md-option value="Unknown">Unknown</md-option>
+                    </md-select>
+                    <md-input-container>
+                        <label ng-if="!hero.photo" for="picture">Attach the photo</label>
+                        <label ng-if="hero.photo" for="picture">Photo attached</label>
+                        <input name="picture" ngf-select ng-model="hero.photo" accept="image/*">
+                    </md-input-container>
+                    <div class="button-toolbar" layout="row" layout-align="end center">
+                        <md-button class="md-primary" type="submit">Join</md-button>
+                    </div>
+                </form>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>

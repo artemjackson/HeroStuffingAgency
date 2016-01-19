@@ -1,0 +1,57 @@
+{
+  "publicPath": "wwwroot/",
+  "server": {
+    "host": "localhost",
+    "port": "3020",
+    "livereload": true,
+    "log": "debug",
+    "fallback": "index.html",
+    "open": true
+  },
+  "scripts": {
+    "src": "src/index.js",
+    "dest": "app.min.js"
+  },
+  "styles": {
+    "src": [
+      "src/**/*.css",
+      "src/**/*.less"
+    ],
+    "dest": "style.min.css"
+  },
+  "images": {
+    "src": [
+      "src/**/*.png",
+      "src/**/*.jpg",
+      "src/**/*.jpeg",
+      "src/**/*.svg"
+    ],
+    "dest": "img/"
+  },
+  "fonts":{
+    "src": [
+      "src/fonts/*.otf",
+      "src/fonts/*.ttf"
+    ],
+    "dest": "fonts/"
+  },
+  "vendor": {
+    "scripts": {
+      "src": [
+        "bower_components/angular/angular.min.js",
+        "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+        "bower_components/angular-animate/angular-animate.min.js",
+        "bower_components/angular-aria/angular-aria.min.js",
+        "bower_components/angular-material/angular-material.min.js",
+        "bower_components/ng-file-upload/ng-file-upload.min.js"
+      ],
+      "dest": "vendor.min.js"
+    },
+    "styles": {
+      "src": [
+        "bower_components/angular-material/angular-material.min.css"
+      ],
+      "dest": "vendor.min.css"
+    }
+  }
+}

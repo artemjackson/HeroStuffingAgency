@@ -1,0 +1,15 @@
+<div class="full-height details-page_wrapper" layout="column" style="background: url({{ctrl.hero.photo}})">
+    <md-content class="transparent" layout="row" layout-align="center center">
+        <div layout-margin flex layout="column" layout-align="center center">
+            <h2 class="shadowed ">{{ctrl.hero.pseudonym}} ({{ctrl.hero.firstName}} {{ctrl.hero.lastName}})</h2>
+        </div>
+        <div class="button-toolbar" layout="row" layout-align="end center">
+            <md-button ng-click="ctrl.uploadDetails()" class="md-raised">Wiki</md-button>
+            <md-button ui-sref="home" class="md-raised">Home</md-button>
+            <md-button ui-sref="heroes" class="md-raised">Heroes</md-button>
+            <md-button ui-sref="join" class="md-raised">Join us!</md-button>
+        </div>
+    </md-content>
+    <md-content layout-padding ng-if="ctrl.detailedInfo" class="transparent text-light-white" layout-margin ng-bind-html="ctrl.detailedInfo">
+    </md-content>
+</div>

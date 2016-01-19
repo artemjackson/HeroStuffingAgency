@@ -1,0 +1,8 @@
+.main-page_wrapper {
+    background: url("img/main/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.company-name {
+   font-size: 170%; 
+}
