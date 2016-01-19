@@ -1,0 +1,14 @@
+{
+  "name": "recover-webapp",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "license": "Proprietary",
+  "devDependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-material": "~0.11.4"
+  },
+  "dependencies": {
+    "angular-google-maps": "~2.2.1"
+  }
+}
