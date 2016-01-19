@@ -1,6 +1,4 @@
 app:
-   build: .
-   volumes:
-   - "./:/"
-   ports:
-   - "80":"5000"
+  build: .
+  ports:
+   - "80:5000"

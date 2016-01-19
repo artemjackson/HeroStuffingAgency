@@ -1,7 +1,7 @@
 {
-  "name": "recover-webapp",
+  "name": "heroesstuffingagency-webapp",
   "version": "0.0.1",
-  "main": "app/index.min.js",
+  "main": "wwwroot/index.min.js",
   "scripts": {
     "clear": "gulp clear",
     "build": "gulp build",
